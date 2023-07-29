@@ -32,7 +32,7 @@ export const config = {
     plainToken: required("CSRF_SECRET_KEY"),
   },
   rateLimit: {
-    windowMs: required("WIONDOW_MS"),
+    windowMs: required("WINDOW_MS"),
     maxRequest: required("MAX_REQUEST"),
   },
   nodeMailer: {
