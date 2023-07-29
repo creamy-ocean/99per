@@ -198,7 +198,7 @@ main {
     .button-box {
       @include flexCenter(row);
       margin-top: 1rem;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
       button {
         @include basicButton();
         margin: $basicMargin;
