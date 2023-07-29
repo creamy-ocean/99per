@@ -1,0 +1,63 @@
+@import "./mixins";
+@import "./variables";
+
+.profiles {
+  @include basicUl();
+  .profile {
+    @include flexCenter(row);
+    width: 30rem;
+    border-bottom: 1px solid $grey;
+    padding: 1rem 0.5rem;
+    margin: 0 auto;
+    font-size: $smallFont;
+    .profile-body {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-top: 0.25rem;
+        margin-left: 0.25rem;
+      }
+      .username {
+        font-weight: bold;
+        margin: 0;
+      }
+      .level {
+        margin-left: 0.5rem;
+        background-color: $purple;
+        border-radius: 5px;
+        padding: 0 0.4rem;
+        color: white;
+      }
+      .delete-button {
+        margin-left: 0.5rem;
+        border-radius: 5px;
+        padding: 0 0.4rem;
+        border: none;
+        i {
+          color: #444;
+          font-size: 0.8rem;
+        }
+      }
+      .interest {
+        color: $purple;
+      }
+      .contact {
+        color: $lightPurple;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.new-profile {
+  @include basicButton();
+}
+
+@media (max-width: 400px) {
+  .profiles {
+    .profile {
+      width: 22rem;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import "./mixins";
+@import "./variables";
+
+.new-profile-form {
+  @include flexCenter(column);
+  h3 {
+    padding: 2.5rem 0;
+    text-align: center;
+    font-size: $mediumFont;
+  }
+  input[type="text"],
+  select {
+    @include basicInput(100%, $verticalMargin);
+  }
+  .option-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $basicPadding;
+    font-size: $smallFont;
+    div {
+      @include flexCenter(row);
+      input[type="checkbox"] {
+        @include basicCheckBox();
+      }
+      label {
+        padding: 0 0.4rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .button-box {
+    display: flex;
+    justify-content: flex-end;
+    margin: $verticalMargin;
+    button {
+      @include basicButton();
+      margin-right: 0.4rem;
+    }
+  }
+}

@@ -1,0 +1,593 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .main-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 50vw;
+  justify-content: space-between;
+  padding: 1.5vw 0;
+  width: 50vw;
+}
+main .main-hero .text {
+  width: 40%;
+  color: #4158d9;
+  font-family: Bagel Fat One, cursive;
+  font-size: 3.5vw;
+}
+main .main-hero .images {
+  width: 60%;
+  height: 15vw;
+  position: relative;
+}
+main .main-hero .images img {
+  position: absolute;
+}
+main .main-hero .images .emoji {
+  width: 10vw;
+  top: 0;
+}
+main .main-hero .images .joystick {
+  width: 9vw;
+  right: 0;
+  top: 3vw;
+}
+main .main-hero .images .trophy {
+  width: 9vw;
+  bottom: 0;
+  right: 12vw;
+  transform: scaleX(-1);
+}
+main .main-hero .images .red-cross {
+  width: 3.5vw;
+  bottom: 1.5vw;
+  left: 3vw;
+  transform: scaleX(1);
+  transform: rotate(0.25turn);
+}
+main .main-hero .images .red-cross-2 {
+  width: 3.5vw;
+  top: 1vw;
+  right: 10vw;
+  transform: scaleX(-1);
+}
+main .main-hero .images .red-cross-3 {
+  width: 3.5vw;
+  bottom: 1vw;
+  right: 3.5vw;
+  transform: scaleX(-1);
+}
+main .main-hero .media-images {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .main-hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .main-hero .text {
+    text-align: center;
+    color: #4158d9;
+    font-family: Bagel Fat One, cursive;
+    font-size: 3rem;
+  }
+  main .main-hero .images {
+    width: 28%;
+    height: 10rem;
+    position: relative;
+    margin-top: 2rem;
+    display: none;
+  }
+  main .main-hero .media-images {
+    display: block;
+    text-align: center;
+  }
+  main .main-hero .media-images img {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  main .main-hero .text {
+    font-size: 8vw;
+  }
+  main .info-text {
+    font-size: 0.9rem;
+  }
+}
+main .info-text {
+  margin-top: 2rem;
+  color: #444;
+  font-size: 1.1rem;
+}
+main .login-section {
+  margin-top: 2rem;
+}
+main .login-section label {
+  font-size: 0.9rem;
+}
+main .login-section .input-box input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+main .login-section .email-box label {
+  display: block;
+}
+main .login-section .email-box input {
+  width: 84%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+main .login-section .email-box button {
+  padding: 0.4rem 0.6rem;
+  background-color: #6c7dd9;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 1%;
+}
+main .login-section .email-box button:disabled {
+  background-color: #a7b2f2;
+  color: #ddd;
+}
+main .login-section .verify-box label {
+  display: block;
+}
+main .login-section .verify-box input {
+  width: 84%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+main .login-section .verify-box button {
+  padding: 0.4rem 0.6rem;
+  background-color: #6c7dd9;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 1%;
+}
+main .login-section .verify-box button:disabled {
+  background-color: #a7b2f2;
+  color: #ddd;
+}
+main .login-section .result-box {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+main .login-section .gender-box h3 {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+main .login-section .gender-box .gender {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+main .login-section .gender-box .gender .gender-option {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+main .login-section .gender-box .gender .gender-option div label {
+  margin-left: 0.5rem;
+}
+main .login-section .image-box {
+  font-size: 0.9rem;
+}
+main .login-section .image-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  color: #666;
+}
+main .login-section .image-box div img {
+  width: 7rem;
+}
+main .login-section .image-box div .icon {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+main .login-section .image-box div label {
+  cursor: pointer;
+}
+main .login-section .image-box div input {
+  display: none;
+}
+main .login-section .button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+main .login-section .button-box button {
+  padding: 0.4rem 0.6rem;
+  background-color: #6c7dd9;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+main .login-section .button-box button:disabled {
+  background-color: #a7b2f2;
+  color: #ddd;
+}
+
+.search-form {
+  margin-top: 2rem;
+}
+.search-form .filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.search-form .filters h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.search-form .filters select {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.search-form .filters ul {
+  list-style: none;
+}
+.search-form .filters ul li {
+  display: inline-block;
+  font-size: 0.9rem;
+}
+.search-form .filters ul li .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-form .filters ul li .wrapper input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 2px;
+  background-color: #ddd;
+  outline: none;
+  cursor: pointer;
+}
+.search-form .filters ul li .wrapper input[type=checkbox]:after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 0.5rem;
+  color: #fff;
+  visibility: hidden;
+}
+.search-form .filters ul li .wrapper input[type=checkbox]:hover {
+  background-color: #6c7dd9;
+}
+.search-form .filters ul li .wrapper input[type=checkbox]:checked {
+  background-color: #4158d9;
+}
+.search-form .filters ul li .wrapper input[type=checkbox]:checked:after {
+  visibility: visible;
+}
+.search-form .filters ul li .wrapper label {
+  padding: 0 0.4rem;
+  cursor: pointer;
+}
+.search-form .filters ul li input[type=number] {
+  width: 4rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.search-form .filters .filters-line {
+  margin: 1rem 0;
+  border: 1px solid #eee;
+}
+.search-form .filters .button_box {
+  display: flex;
+  justify-content: flex-end;
+}
+.search-form .filters .button_box button {
+  padding: 0.4rem 0.6rem;
+  background-color: #6c7dd9;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 0.4rem;
+}
+.search-form .filters .button_box button:disabled {
+  background-color: #a7b2f2;
+  color: #ddd;
+}
+
+.profiles {
+  list-style: none;
+}
+.profiles .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 30rem;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0.5rem;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.profiles .profile .profile-body {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.profiles .profile .profile-body span {
+  margin-top: 0.25rem;
+  margin-left: 0.25rem;
+}
+.profiles .profile .profile-body .username {
+  font-weight: bold;
+  margin: 0;
+}
+.profiles .profile .profile-body .level {
+  margin-left: 0.5rem;
+  background-color: #6c7dd9;
+  border-radius: 5px;
+  padding: 0 0.4rem;
+  color: white;
+}
+.profiles .profile .profile-body .delete-button {
+  margin-left: 0.5rem;
+  border-radius: 5px;
+  padding: 0 0.4rem;
+  border: none;
+}
+.profiles .profile .profile-body .delete-button i {
+  color: #444;
+  font-size: 0.8rem;
+}
+.profiles .profile .profile-body .interest {
+  color: #6c7dd9;
+}
+.profiles .profile .profile-body .contact {
+  color: #a7b2f2;
+  text-align: right;
+}
+
+.new-profile {
+  padding: 0.4rem 0.6rem;
+  background-color: #6c7dd9;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.new-profile:disabled {
+  background-color: #a7b2f2;
+  color: #ddd;
+}
+
+@media (max-width: 400px) {
+  .profiles .profile {
+    width: 22rem;
+  }
+}
+.new-profile-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.new-profile-form h3 {
+  padding: 2.5rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.new-profile-form input[type=text],
+.new-profile-form select {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.new-profile-form .option-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+.new-profile-form .option-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.new-profile-form .option-box div input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 2px;
+  background-color: #ddd;
+  outline: none;
+  cursor: pointer;
+}
+.new-profile-form .option-box div input[type=checkbox]:after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 0.5rem;
+  color: #fff;
+  visibility: hidden;
+}
+.new-profile-form .option-box div input[type=checkbox]:hover {
+  background-color: #6c7dd9;
+}
+.new-profile-form .option-box div input[type=checkbox]:checked {
+  background-color: #4158d9;
+}
+.new-profile-form .option-box div input[type=checkbox]:checked:after {
+  visibility: visible;
+}
+.new-profile-form .option-box div label {
+  padding: 0 0.4rem;
+  cursor: pointer;
+}
+.new-profile-form .button-box {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem 0;
+}
+.new-profile-form .button-box button {
+  padding: 0.4rem 0.6rem;
+  background-color: #6c7dd9;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 0.4rem;
+}
+.new-profile-form .button-box button:disabled {
+  background-color: #a7b2f2;
+  color: #ddd;
+}
+
+.avatar {
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar img {
+  width: 5rem;
+}
+.avatar .avatar-txt {
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #444;
+}
+
+@media (max-width: 400px) {
+  .avatar .avatar-txt {
+    width: 70%;
+  }
+}
+.banner {
+  display: none;
+}
+
+.active {
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #a7b2f2;
+  color: white;
+  border-radius: 5px;
+}
+
+header {
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  align-items: center;
+}
+header .logo-name {
+  color: #6c7dd9;
+  font-family: Bagel Fat One, cursive;
+  cursor: pointer;
+}
+header button {
+  margin-left: 0.5rem;
+  border: none;
+  background: transparent;
+  color: #6c7dd9;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  header {
+    height: 5rem;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 400px) {
+  header .user-name {
+    display: none;
+  }
+}
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #eee;
+  padding: 3rem 0;
+}
+footer a {
+  color: #ddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Noto Sans Kr, sasn-serif;
+}/*# sourceMappingURL=index.css.map */

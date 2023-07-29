@@ -1,0 +1,58 @@
+@import "./_mixins";
+@import "./_variables";
+
+@mixin basicUl() {
+  list-style: none;
+}
+
+@mixin basicLi() {
+  display: inline-block;
+}
+
+.search-form {
+  margin-top: 2rem;
+  .filters {
+    @include flexCenter(column);
+    h3 {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    select {
+      @include basicInput(100%, $verticalMargin);
+    }
+    ul {
+      @include basicUl();
+      li {
+        @include basicLi();
+        font-size: $smallFont;
+        .wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          input[type="checkbox"] {
+            @include basicCheckBox();
+          }
+          label {
+            padding: 0 0.4rem;
+            cursor: pointer;
+          }
+        }
+        input[type="number"] {
+          @include basicInput(4rem, $basicMargin);
+        }
+      }
+    }
+    .filters-line {
+      margin: 1rem 0;
+      border: 1px solid #eee;
+    }
+    .button_box {
+      display: flex;
+      justify-content: flex-end;
+      button {
+        @include basicButton();
+        margin-right: 0.4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.banner {
+  display: none;
+}
+.active {
+  display: block;
+  text-align: center;
+  padding: $basicPadding;
+  background-color: $lightPurple;
+  color: white;
+  border-radius: 5px;
+}

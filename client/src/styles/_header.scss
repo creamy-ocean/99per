@@ -1,0 +1,36 @@
+header {
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  align-items: center;
+  .logo-name {
+    color: $purple;
+    font-family: $typoFont;
+    cursor: pointer;
+  }
+  button {
+    margin-left: 0.5rem;
+    border: none;
+    background: transparent;
+    color: $purple;
+    font-size: $smallFont;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    height: 5rem;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    .user-name {
+      display: none;
+    }
+  }
+}

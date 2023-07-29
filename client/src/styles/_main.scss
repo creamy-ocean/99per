@@ -1,0 +1,208 @@
+@import "./mixins";
+
+main {
+  @include flexCenter(column);
+  .main-hero {
+    @include flexCenter(row);
+    width: 50vw;
+    justify-content: space-between;
+    padding: 1.5vw 0;
+    width: 50vw;
+    .text {
+      width: 40%;
+      color: $warmBlue;
+      font-family: $typoFont;
+      font-size: $bigFont;
+    }
+    .images {
+      width: 60%;
+      height: 15vw;
+      position: relative;
+      img {
+        position: absolute;
+      }
+      .emoji {
+        width: 10vw;
+        top: 0;
+      }
+      .joystick {
+        width: 9vw;
+        right: 0;
+        top: 3vw;
+      }
+      .trophy {
+        width: 9vw;
+        bottom: 0;
+        right: 12vw;
+        transform: scaleX(-1);
+      }
+      .red-cross {
+        width: 3.5vw;
+        bottom: 1.5vw;
+        left: 3vw;
+        transform: scaleX(1);
+        transform: rotate(0.25turn);
+      }
+      .red-cross-2 {
+        width: 3.5vw;
+        top: 1vw;
+        right: 10vw;
+        transform: scaleX(-1);
+      }
+      .red-cross-3 {
+        width: 3.5vw;
+        bottom: 1vw;
+        right: 3.5vw;
+        transform: scaleX(-1);
+      }
+    }
+    .media-images {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    @include flexCenter(column);
+    .main-hero {
+      width: 100%;
+      @include flexCenter(column);
+      .text {
+        text-align: center;
+        color: $warmBlue;
+        font-family: $typoFont;
+        font-size: 3rem;
+      }
+      .images {
+        width: 28%;
+        height: 10rem;
+        position: relative;
+        margin-top: 2rem;
+        display: none;
+      }
+      .media-images {
+        display: block;
+        text-align: center;
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  main {
+    .main-hero {
+      .text {
+        font-size: 8vw;
+      }
+    }
+    .info-text {
+      font-size: $smallFont;
+    }
+  }
+}
+
+main {
+  .info-text {
+    margin-top: 2rem;
+    color: $black;
+    font-size: $mediumFont;
+  }
+  .login-section {
+    margin-top: 2rem;
+    label {
+      font-size: $smallFont;
+    }
+    .input-box {
+      input {
+        @include basicInput(100%, $verticalMargin);
+      }
+    }
+    .email-box {
+      label {
+        display: block;
+      }
+      input {
+        @include basicInput(84%, $verticalMargin);
+      }
+      button {
+        @include basicButton();
+        margin-left: 1%;
+      }
+    }
+    .verify-box {
+      label {
+        display: block;
+      }
+      input {
+        @include basicInput(84%, $verticalMargin);
+      }
+      button {
+        @include basicButton();
+        margin-left: 1%;
+      }
+    }
+    .result-box {
+      text-align: center;
+      font-size: $smallFont;
+      margin: $verticalMargin;
+    }
+    .gender-box {
+      h3 {
+        font-size: $smallFont;
+        font-weight: normal;
+      }
+      .gender {
+        display: flex;
+        justify-content: center;
+        margin: $basicMargin;
+        .gender-option {
+          display: flex;
+          width: 60%;
+          justify-content: space-around;
+          div {
+            label {
+              margin-left: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    .image-box {
+      font-size: $smallFont;
+      div {
+        @include flexCenter(column);
+        padding: 1rem;
+        border: 1px solid $grey;
+        border-radius: 5px;
+        margin: $verticalMargin;
+        color: #666;
+        img {
+          width: 7rem;
+        }
+        .icon {
+          font-size: 2rem;
+          margin: $verticalMargin;
+        }
+        label {
+          cursor: pointer;
+        }
+        input {
+          display: none;
+        }
+      }
+    }
+    .button-box {
+      @include flexCenter(row);
+      margin-top: 1rem;
+      margin-bottom: 5rem;
+      button {
+        @include basicButton();
+        margin: $basicMargin;
+      }
+    }
+  }
+}

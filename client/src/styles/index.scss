@@ -1,0 +1,16 @@
+@import "./variables";
+@import "./main";
+@import "./searchForm";
+@import "./profiles";
+@import "./newProfileForm";
+@import "./avatar";
+@import "./banner";
+@import "./header";
+@import "./footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mainFont;
+}

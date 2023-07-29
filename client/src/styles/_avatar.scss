@@ -1,0 +1,27 @@
+.avatar {
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 5rem;
+  }
+  .avatar-txt {
+    width: 50%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $grey;
+    color: #444;
+  }
+}
+
+@media (max-width: 400px) {
+  .avatar {
+    .avatar-txt {
+      width: 70%;
+    }
+  }
+}
