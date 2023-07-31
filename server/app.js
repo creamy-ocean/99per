@@ -12,7 +12,7 @@ import authRouter from "./router/auth.js";
 import gamesRouter from "./router/games.js";
 import { config } from "./config.js";
 import { db } from "./db/database.js";
-import { csrfCheck } from "./middleware/csrf.js";
+// import { csrfCheck } from "./middleware/csrf.js";
 import rateLimit from "./middleware/rate-limiter.js";
 
 const app = express();
@@ -30,7 +30,7 @@ app.use(cors(corsOption));
 app.use(morgan("tiny"));
 app.use(rateLimit);
 
-app.use(csrfCheck);
+// app.use(csrfCheck);
 app.use("/profiles", profilesRouter);
 app.use("/auth", authRouter);
 app.use("/games", gamesRouter);
