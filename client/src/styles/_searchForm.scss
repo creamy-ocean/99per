@@ -13,6 +13,7 @@
   margin-top: 2rem;
   .filters {
     @include flexCenter(column);
+    padding: 0 1rem;
     h3 {
       font-size: 1rem;
       font-weight: normal;
