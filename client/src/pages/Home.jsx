@@ -45,6 +45,13 @@ const Home = ({ onVerify, onCodeCheck, onSignUp, onLogin }) => {
         </div>
       </div>
       <span className="info-text">로그인 하신 뒤 이용해주세요</span>
+      <span className="info-text">- 테스트 계정 -</span>
+      <span style={{ color: "#999", fontSize: "0.9rem" }}>
+        아이디: test@test.com
+      </span>
+      <span style={{ color: "#999", fontSize: "0.9rem" }}>
+        비밀번호: 123412341234
+      </span>
       <Login
         onVerify={onVerify}
         onCodeCheck={onCodeCheck}
