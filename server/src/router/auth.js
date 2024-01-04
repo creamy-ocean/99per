@@ -1,10 +1,10 @@
 import express from "express";
 import {} from "express-async-errors";
-import { verify } from "../../middleware/verifier.js";
 import { body } from "express-validator";
-import { validate } from "../../middleware/validator.js";
-import * as authController from "../../controller/auth.js";
-import { isAuth } from "../../middleware/auth.js";
+import * as authController from "../controller/auth.js";
+import { isAuth } from "../middleware/auth.js";
+import { validate } from "../middleware/validator.js";
+import { verify } from "../middleware/verifier.js";
 
 const router = express.Router();
 

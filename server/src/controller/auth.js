@@ -1,7 +1,7 @@
-import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
-import * as userRepository from "../data/auth.js";
+import jwt from "jsonwebtoken";
 import { config } from "../config.js";
+import * as userRepository from "../data/auth.js";
 
 export async function verify(req, res) {
   const number = req.number;

@@ -1,7 +1,7 @@
 import express from "express";
 import "express-async-errors";
-import * as profileController from "../../controller/profile.js";
-import { isAuth } from "../../middleware/auth.js";
+import * as profileController from "../controller/profile.js";
+import { isAuth } from "../middleware/auth.js";
 
 const router = express.Router();
 
