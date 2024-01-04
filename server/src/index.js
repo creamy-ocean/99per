@@ -9,9 +9,9 @@ import morgan from "morgan";
 // 내부 모듈
 import { config } from "./config.js";
 import { db } from "./db/database.js";
-import authRouter from "./src/router/auth.js";
-import gamesRouter from "./src/router/games.js";
-import profilesRouter from "./src/router/profiles.js";
+import authRouter from "./router/auth.js";
+import gamesRouter from "./router/games.js";
+import profilesRouter from "./router/profiles.js";
 // import { csrfCheck } from "./middleware/csrf.js";
 import rateLimit from "./middleware/rate-limiter.js";
 
