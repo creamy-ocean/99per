@@ -32,9 +32,9 @@ app.use(morgan("tiny"));
 app.use(rateLimit);
 
 // app.use(csrfCheck);
-app.use("/.netlify/functions/api/profiles", profilesRouter);
-app.use("/.netlify/functions/api/auth", authRouter);
-app.use("/.netlify/functions/api/games", gamesRouter);
+app.use("/functions/api/profiles", profilesRouter);
+app.use("/functions/api/auth", authRouter);
+app.use("/functions/api/games", gamesRouter);
 
 app.use((req, res, next) => {
   res.sendStatus(404);

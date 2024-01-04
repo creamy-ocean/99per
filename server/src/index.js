@@ -1,17 +1,17 @@
 // 외부 모듈
-import express, { urlencoded } from "express";
-import "express-async-errors";
-import cors from "cors";
-import morgan from "morgan";
-import helmet from "helmet";
 import cookieParser from "cookie-parser";
+import cors from "cors";
+import express from "express";
+import "express-async-errors";
+import helmet from "helmet";
+import morgan from "morgan";
 
 // 내부 모듈
-import profilesRouter from "./router/profiles.js";
-import authRouter from "./router/auth.js";
-import gamesRouter from "./router/games.js";
 import { config } from "./config.js";
 import { db } from "./db/database.js";
+import authRouter from "./src/router/auth.js";
+import gamesRouter from "./src/router/games.js";
+import profilesRouter from "./src/router/profiles.js";
 // import { csrfCheck } from "./middleware/csrf.js";
 import rateLimit from "./middleware/rate-limiter.js";
 
