@@ -46,8 +46,9 @@ const Home = ({ onVerify, onCodeCheck, onSignUp, onLogin }) => {
       </div>
       <span className="info-text">로그인 하신 뒤 이용해주세요</span>
       <h1>
-        현재 서버 호스팅 업체 변경 대응 중으로 기능 확인이 어렵습니다. 구현한
-        기능들은 Github Readme 참고 부탁드립니다.
+        현재 서버 호스팅 업체 변경 대응 중으로 기능 확인이 어렵습니다.
+        <br />
+        구현한 기능들은 Github Readme 참고 부탁드립니다.
       </h1>
       <span className="info-text">- 테스트 계정 -</span>
       <span style={{ color: "#999", fontSize: "0.9rem" }}>
