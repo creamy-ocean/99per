@@ -12,7 +12,6 @@
 <br/>
 
 ## 배포 링크
-(서버 호스팅 업체가 변경되어 대응 중입니다. 구현한 기능들은 아래 설명 참고 부탁드립니다.)
 [https://99per.netlify.app/](https://99per.netlify.app/)
 
 <br/>
