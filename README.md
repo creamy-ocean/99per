@@ -12,7 +12,9 @@
 <br/>
 
 ## 배포 링크
-[https://99per.netlify.app/](https://99per.netlify.app/)
+- 호스팅 서버가 자동으로 슬립 모드로 전환되기 때문에 <strong>처음 요청을 보낼 때 시간이 조금 소요됩니다</strong>
+- 로그인 버튼 클릭 후 1분 정도 지난 뒤에 다시 로그인 시도 부탁드립니다
+- [https://99per.netlify.app/](https://99per.netlify.app/)
 
 <br/>
 
